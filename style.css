@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background: url('./bg.jpeg') ;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    color : #fff;
+    display: flex;
+    height: 100vh;width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+.keys{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    height:auto;
+    width: 100%;
+}
+.key{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.07s;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    margin-top: 10px; margin-bottom: 10px;
+    flex-direction: column;
+    height: calc(100vw/9 - 10px); width :calc(100%/9 - 10px);
+}
+.playing{
+    position: relative;
+    transform: scale(1.05);
+    border: solid 1px #ffc600 ;
+    box-shadow: 0 0 10px #ffc600;
+}
+.key kbd{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.key span{
+    font-size: .75rem;
+    color: rgb(255, 255, 103);
+}
